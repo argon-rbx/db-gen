@@ -1,0 +1,19 @@
+[package]
+name = "db-gen"
+authors = ["Dervex"]
+description = "A tool for automatic reflection database and completion schema generation for Argon"
+repository = "https://github.com/argon-rbx/db-gen"
+license = "Apache-2.0"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "db_gen"
+path = "src/lib.rs"
+
+[dependencies]
+anyhow = "1.0.86"
+clap = { version = "4.5.4", features = ["derive"] }
+env_logger = "0.11.3"
+log = "0.4.21"
+roblox_install = "1.0.0"
